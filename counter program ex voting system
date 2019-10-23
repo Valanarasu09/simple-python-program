@@ -1,0 +1,10 @@
+from collections import Counter
+l=["valan","arun","valan","santh","arun","santh","arun"]
+m=dict(Counter(l))
+max=0
+s=""
+for i in sorted(m.keys()):
+    if m[i]>=max:
+        max=m[i]
+        s=i
+print(s)
